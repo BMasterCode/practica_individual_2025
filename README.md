@@ -1,4 +1,4 @@
-# CLASE 1
+# CLASES DE GIT Y GITHUB
 ### Que es un contro de versiones
 Un control de versiones es un sistema que registra cada
 cambio que se realiza en el código fuente de un proyecto. Esto
@@ -28,28 +28,26 @@ verificar si el archivo de instalacion es el que nesesitas o acepta, (en mi comp
 -abrir vs code con la carpeta en la que esta el git\
 -crear un archivo en vs code (README.md) o (nombre de archivo x)
 
-## CODIGOS USADOS
-### <git init>
-inicializa un archivo con git (para que dicho archivo pueda usar git)
-
-# CLASE 2
 # STATES Y COMMITS
 
 ## 3 estados de git
 
 ### Modified
 El archivo ha sido creado, eliminado o contiene cambios que no han sido marcados como confirmados (esta en estado de modificacion, es decir que se cambiaron cosas)\
--Para poder entrar en este estado tienes que guardar el proyecto que realizas, esose puede con "ctrl + s" 
+-Para poder entrar en este estado tienes que guardar el proyecto que realizas, esose puede con "ctrl + s"
+![alt text](image.png)
 
 ### Staged
 El archivo a sido marcado como preparado para ser confirmado en el repositorio local\
 -<git add (nombre de la rama)>(para selecccionar una sola rama)\
 -<git add .> (para seleccionar todas las ramas)
+![alt text](image-1.png)
 
 ### Commited
 El archivo se encuentra grabado en el repositorio local. Esta accion recive el nombre de commit\
 -<git commit> (poner refencia commit manual)\
 -<git commit -m (referencia del commit)> (para poner la refencia de forma automatica)
+![alt text](image-2.png)
 
 ## Que es commit
 en terminos sencillos un commit es como un punto de guardado de un juego para poder guardar  el progreso realizado
@@ -70,6 +68,10 @@ SON PUNTEROS AL PRIMERO DE LA LISTA O A UN COMMIT CREADO\
 
 
 ## CODIGOS USADOS
+##Inicializar un acrhivo con git
+
+### <git init>
+inicializa un archivo con git (para que dicho archivo pueda usar git)
 
 ## Los estados de los archivos
 
