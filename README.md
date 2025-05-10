@@ -158,6 +158,26 @@ para poder subir cambios al repositorio remoto debemos ingresarel comando <git p
 (main) es igual a que rama queremos que se suba a dicho repositorio local\
 esto hace que los cambios de esa rama se suban al repositorio remoto\
 
+## Crear una rama remota
+-crear una rama<git switch -c (nombre de rama)>\
+-<git push (origin) (nombre rama)>\
+la rama debe existir en tu repositorio local, sino se ocacciona un error
+
+## Eliminar ramas de mi repocitorio local que ya no usan
+-vamos a la rama en github la eliminamos
+-pero eso no se vera en el git, entonces tenemos que ingresar <git prune origin> esto hace que se actulicec el git y vea que se elimino una rama
+
+## diferencia entre git push y git pull
+-<git push>\
+nos sirve para enpujar cualquier cambio o modificarlo del repocitorio local al repositorio remoto\
+<git push --all> actuliza todas las rama en su referencia adecuada, es decir el main al main, etc, es decir que todas las ramas se actulizan en el repositorio remoto\
+<git push -u origin (rama1)(rama2)(ramaN)> es masomenos la idea del --all pero solo con algunas ramas, es decir que lleva algunas ramas al repositorio remoto
+<git push -f> esto hace que a fuerza se escriba el repositorio remoto a tu rama local, esto puede ser peligroso por que si otro esta trabajando en la misma rama sus cambios seran perdidos
+<git push -d origin (rama)> borrar ramas remotas
+
+-<git pull>\
+nos sirve para jalar o descargar los cambios o modifiaciones del repositorio remoto al repositorio local
+
 
 
 
@@ -230,6 +250,9 @@ Es para poder ver todas las ramas que hay
 #### <git branch -a>
 para ver todas las ramas que hay, incluso las de la nube(repositorio remoto)
 
+#### <git remote -v>
+Para ver las ramas solo del repositorio remoto y a que url esta apuntando
+
 ### Crear rama
 
 #### <git branch (nombre de rama)>
@@ -244,7 +267,7 @@ Sirve para crear una rama y directamente cambiar de posicion a ella
 Para cambiar directamente a la rama siguiente 
 
 #### <git switch (nombre de rama)>
-Comando recomendado para cambiar entre ramas
+Comando recomendado para cambiar entre ramas, incluyendo a una rama remota
 
 #### <git checkout (nombre de rama)>
 Primer comando que se creo para cambiar de ramas, pero no es su unica funcion...?
@@ -305,6 +328,32 @@ Esto hace que subamos al repositorio remoto los cambios de una rama que tengamos
 (origin)==(nombre que le dimos al repositorio remoto, ES UN ALIAS)\
 (main) es igual a que rama queremos que se suba a dicho repositorio local\
 
+#### <git push -u (origin) (rama)>
+la diferencia con el del arriba es que el "-u" hace que tenga una relacion el repocitorio remoto con el local y hace simplemente solo poner <git push> y git lo entiende que es de la rama (main) a la rama(main), pero esto se tiene que hacer para cada rama, sino no funcionara
+
+#### <git push --all> 
+Actuliza todas las rama en su referencia adecuada, es decir el main al main, etc, es decir que todas las ramas se actulizan en el repositorio remoto\
+#### <git push -u origin (rama1)(rama2)(ramaN)> 
+Es masomenos la idea del --all pero solo con algunas ramas, es decir que lleva algunas ramas al repositorio remoto
+#### <git push -f> 
+Esto hace que a fuerza se escriba el repositorio remoto a tu rama local, esto puede ser peligroso por que si otro esta trabajando en la misma rama sus cambios seran perdidos
+
+### traer ramas del repositorio remoto
+#### <git fetch>
+esto actualiza las referencias de que ramas existe en mi repositorio remoto, y se ve las ramas del repositorio remoto
+
+#### <git pull origin (nombre de rama)>
+despues de movernos a esa rama en el repositorio remoto ingresas esto para que lo lleve al repositorio local tuyo, por que de no hacerlo puede que la rama directamente se fucione con la rama main.
+
+
+### eliminar una rama de repositorio remoto
+
+#### <git push -d origin (rama)>
+Borrar ramas remotas
+
+#### <git prune origin>
+Esto hace que se actulice el git y vea que se elimino una rama,
+hace basicamente que si se elimino una rama lo vea desde el git
 
 
 
