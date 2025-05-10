@@ -35,19 +35,19 @@ verificar si el archivo de instalacion es el que nesesitas o acepta, (en mi comp
 ### Modified
 El archivo ha sido creado, eliminado o contiene cambios que no han sido marcados como confirmados (esta en estado de modificacion, es decir que se cambiaron cosas)\
 -Para poder entrar en este estado tienes que guardar el proyecto que realizas, esose puede con "ctrl + s"
-![alt text](image.png)
+![alt text](image.png)\
 
 ### Staged
 El archivo a sido marcado como preparado para ser confirmado en el repositorio local\
 -<git add (nombre de la rama)>(para selecccionar una sola rama)\
 -<git add .> (para seleccionar todas las ramas)
-![alt text](image-1.png)
+![alt text](image-1.png)\
 
 ### Commited
 El archivo se encuentra grabado en el repositorio local. Esta accion recive el nombre de commit\
 -<git commit> (poner refencia commit manual)\
 -<git commit -m (referencia del commit)> (para poner la refencia de forma automatica)
-![alt text](image-2.png)
+![alt text](image-2.png)\
 
 ## Que es commit
 en terminos sencillos un commit es como un punto de guardado de un juego para poder guardar  el progreso realizado
@@ -94,7 +94,7 @@ Porque es una buena practica, las ramas tienen un unico proposito que puede ser 
 
 ## Conflictos
 Esto se ocaciona cuando en la rama destino se an realizado cambios en un mismo archivo que en la rama que se extraen los datos, es decir que git no sabe cual poner como primero por que hay datos de los dos lados y se ocacionan conflictos.\
-![alt text](image-3.png)
+![alt text](image-3.png)/
 <git diff> para ver los conflictos, si no lo muestra\
 -Siempre abra conflictos, pero nuestro trabajo es saber como areglarlo
 
