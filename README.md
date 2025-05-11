@@ -356,7 +356,49 @@ Esto hace que se actulice el git y vea que se elimino una rama,
 hace basicamente que si se elimino una rama lo vea desde el git
 
 
+## Comandos que vi en el examen
+### <git reset>
+#### <git reset --mixed> 
+🔁 Mueve HEAD.
 
+❌ Limpia el staging area (los archivos salen del "stage").
+
+✅ Los cambios siguen en tu carpeta de trabajo (no se pierden).
+
+📌 Ideal para: Deshacer un commit y también quitar los archivos del staging, pero sin borrar nada.
+
+#### <git reset --soft>
+🔁 Mueve HEAD al commit indicado.
+
+✅ Deja todo el código como estaba antes.
+
+✅ Mantiene los cambios en el staging area.
+
+📌 Ideal para: Deshacer uno o más commits, pero mantener los cambios listos para volver a hacer commit.
+
+#### <git reset --hard>
+🔁 Mueve HEAD.
+
+❌ Limpia el staging area.
+
+❌ Borra los cambios en los archivos. ⚠️
+
+📌 Ideal para: Cuando quieres borrar completamente commits y cambios en archivos (como si nunca hubieran pasado).
+
+### <git restore>
+los devuelve a un estado anterior de los estados de los archivos como un des-add
+Acción	                                    Comando\
+Deshacer cambios en archivo	        git restore archivo.txt\
+Quitar del stage (git add)	        git restore --staged archivo.txt\
+Restaura archivo de otro commit	    git restore --source=COMMIT archivo.txt\
+
+#### <git restore .>
+es para restaurar archivos eliminidos en git pero que siguen apareciendo en la carpeta
+restaura todos los archivos modificadosal ultimo commit.
+
+### Para archivos eliminados en git pero que estan en modo delete en <git status> en modo staged
+<git reset> desace el staged\
+<git restore .> restaura
 
 ### Comandos curiosos
 
